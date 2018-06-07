@@ -24,17 +24,22 @@ module register(
     input clk,
     input n_rst,
     input load,
+    input r_out,
     input [3:0] data,
-    output reg [3:0] q
+    output [3:0] q
     );
     
+    reg [3:0] store;
+
     always @(posedge clk)
     begin
         if(!n_rst)
-            q = 0;
+            store = 0;
         else if(load)
-            q = data;
+            store = data;
         else
-            q = q;
+            store = q;
     end
+    
+    assign q = r_out ? store : 'bz;
 endmodule

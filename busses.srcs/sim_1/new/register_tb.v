@@ -25,10 +25,11 @@ module register_tb(
     reg clk;
     reg n_rst;
     reg load;
+    reg r_out;
     reg [3:0]data;
     wire [3:0] q;
     
-    register DUT(clk, n_rst, load, data, q);
+    register DUT(clk, n_rst, load, r_out, data, q);
     
     initial begin
         clk = 0;
@@ -39,6 +40,7 @@ module register_tb(
     end
     
     initial begin
+        r_out = 1;
         data = 4'b1010;
         #40;
         load = 1;
@@ -47,6 +49,9 @@ module register_tb(
         data = 4'b0101;
         #40;
         load = 1;
+        #40;
+        
+        r_out = 0;
         #40;
     end
     
