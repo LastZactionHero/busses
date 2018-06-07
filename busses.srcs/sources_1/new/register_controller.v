@@ -29,29 +29,32 @@ module register_controller(
     output wire [2:0] r_out,
     output wire d_in
     );
-    parameter [2:0] IDLE = 3'b000, STORE = 3'b001, DISPLAY = 3'b010, SWAP_IN = 3'b011, SWAP_OUT = 3'b100;
+    parameter [2:0] IDLE = 3'b000, STORE = 3'b001, DISPLAY = 3'b010, SWAP_IN = 3'b011, SWAP_TMP = 3'b100, SWAP_OUT = 3'b101;
  
     reg [2:0]state;
+    reg [2:0]state_function;
     reg [2:0]next_state;
 
-    always @(mode, func) begin
+    always @(mode, func, state) begin
         case(mode)
         00: begin
-            if(func != 0 && state == IDLE)
-                next_state = STORE;
+            if(state == IDLE && func != 0)
+                next_state = 3'b001;
             else
                 next_state = IDLE;
         end
         01: begin
-            if((func != 0 && state == IDLE) || (func == 0 && state == DISPLAY))
+            if((state == IDLE && func != 0) || (state == DISPLAY && func == 0))
                 next_state = DISPLAY;
             else
                 next_state = IDLE;
         end
         02: begin
-            if(func != 0 && state == IDLE)
+            if(state == IDLE && func != 0)
                 next_state = SWAP_IN;
             else if(state == SWAP_IN)
+                next_state = SWAP_TMP;
+            else if(state == SWAP_TMP)
                 next_state = SWAP_OUT;
             else
                 next_state = IDLE;
@@ -64,23 +67,51 @@ module register_controller(
         if(n_rst == 0) begin
             state = IDLE;
             next_state = IDLE;
+            state_function = 0;
         end
         else
+            if(state == IDLE || next_state == IDLE)
+                state_function = func;
             state = next_state;
     end
     
-    assign r_in = state == IDLE ? 
-        3'b000 : 
-        state == STORE ? 
-            3'b111 & func :
-        3'b000;
+    assign r_in = state == STORE ? state_function :
+                  state == SWAP_IN ? // Set tmp
+                    state_function == 3'b001 ? 3'b100 :
+                    state_function == 3'b010 ? 3'b001 :
+                    state_function == 3'b100 ? 3'b010 :
+                    0 :
+                   state == SWAP_TMP ? // Set first
+                    state_function == 3'b001 ? 3'b001 :
+                    state_function == 3'b010 ? 3'b010 :
+                    state_function == 3'b100 ? 3'b100 :
+                    0 :
+                   state == SWAP_OUT ? // Set second
+                    state_function == 3'b001 ? 3'b010 :
+                    state_function == 3'b010 ? 3'b100 :
+                    state_function == 3'b100 ? 3'b001 :
+                    0 :                   
+                  0;
+
+    assign r_out = state == IDLE ? 0 :
+                            state == DISPLAY ? state_function :
+                            state == SWAP_IN ? // Send first
+                              state_function == 3'b001 ? 3'b001 :
+                              state_function == 3'b010 ? 3'b010 :
+                              state_function == 3'b100 ? 3'b100 :
+                              0 :
+                             state == SWAP_TMP ? // Send second
+                              state_function == 3'b001 ? 3'b010 :
+                              state_function == 3'b010 ? 3'b100 :
+                              state_function == 3'b100 ? 3'b001 :
+                              0 :
+                             state == SWAP_OUT ?
+                              state_function == 3'b001 ? 3'b100 :
+                              state_function == 3'b010 ? 3'b001 :
+                              state_function == 3'b100 ? 3'b010 :
+                              0 :                   
+                            0;
     
-//    case(state)
-//    IDLE: begin
-//        r_in = 0;
-//        r_out = 0;
-//        d_in = 0;
-//    end
-//    endcase
+    assign d_in = state == STORE ? 1 : 0;  
     
 endmodule
