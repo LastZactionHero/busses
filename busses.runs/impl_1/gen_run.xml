@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1528410900">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-DRC" Name="busloader.drc"/>
+  <File Type="BG-BGN" Name="busloader.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="busloader.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="busloader.ltx"/>
+  <File Type="BITSTR-MMI" Name="busloader.mmi"/>
+  <File Type="BITSTR-BMM" Name="busloader_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="busloader.nky"/>
+  <File Type="BITSTR-RBT" Name="busloader.rbt"/>
+  <File Type="BITSTR-MSK" Name="busloader.msk"/>
+  <File Type="BG-BIN" Name="busloader.bin"/>
+  <File Type="BG-BIT" Name="busloader.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="busloader_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="busloader_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="busloader_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="busloader_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="busloader_postroute_physopt.dcp"/>
+  <File Type="ROUTE-CLK" Name="busloader_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="busloader_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="busloader_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="busloader_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="busloader_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="busloader_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="busloader_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="busloader_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="busloader_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="busloader_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="busloader_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="busloader_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="busloader_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="busloader_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="busloader_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="busloader_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="busloader_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="busloader_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="busloader_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="busloader_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="busloader_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="busloader_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="busloader_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="busloader_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="busloader_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="busloader_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="busloader_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="busloader_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="busloader_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="busloader_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="busloader_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="busloader_io_placed.rpt"/>
+  <File Type="RDI-RDI" Name="busloader.vdi"/>
+  <File Type="PWROPT-TIMING" Name="busloader_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="busloader_drc_pwropted.rpt"/>
+  <File Type="OPT-TIMING" Name="busloader_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="busloader.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="busloader_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="busloader_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="busloader_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="busloader_timing_summary_init.rpt"/>
+  <File Type="PWROPT-DCP" Name="busloader_pwropt.dcp"/>
+  <File Type="REPORTS-TCL" Name="busloader_reports.tcl"/>
+  <File Type="PLACE-DCP" Name="busloader_placed.dcp"/>
+  <File Type="PA-TCL" Name="busloader.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/debouncer.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mode.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/register.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/register_controller.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/busloader.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="busloader"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/verilog_multiplier/Arty-A7-35-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../led_shift/led_shift.srcs/constrs_1/imports/verilog_multiplier/Arty-A7-35-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1527659814"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/verilog_multiplier/Arty-A7-35-Master.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream">
+      <Option Id="BinFile">1</Option>
+    </Step>
+  </Strategy>
+</GenRun>

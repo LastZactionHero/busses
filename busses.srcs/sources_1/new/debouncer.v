@@ -26,9 +26,10 @@ module debouncer(
     input btn,
     output q
     );
-    parameter hold_threshold = 6;
-    parameter [1:0] IDLE = 2'b00, DOWN = 2'b01, UP = 2'b10, TRIG = 2'b11;     
-    reg [7:0] hold_counter;
+    parameter hold_threshold = 5_000_000;
+    parameter [1:0] IDLE = 2'b00, DOWN = 2'b01, UP = 2'b10, TRIG = 2'b11;
+         
+    reg [31:0] hold_counter;
     reg [1:0] next_state;
     reg [1:0] state;
     

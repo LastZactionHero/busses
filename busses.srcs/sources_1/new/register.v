@@ -38,7 +38,7 @@ module register(
         else if(load)
             store = data;
         else
-            store = q;
+            store = store;
     end
     
     assign q = r_out ? store : 'bz;

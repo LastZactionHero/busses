@@ -1,0 +1,149 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Wed Jun  6 09:07:09 2018
+# Process ID: 3075
+# Current directory: /home/zach/busses
+# Command line: vivado
+# Log file: /home/zach/busses/vivado.log
+# Journal file: /home/zach/busses/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/zach/busses/busses.xpr
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/zach/busses/busses.srcs/sim_1/new/register_controller_tb.v w ]
+add_files -fileset sim_1 /home/zach/busses/busses.srcs/sim_1/new/register_controller_tb.v
+update_compile_order -fileset sim_1
+set_property top register_controller_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_ip_catalog
+update_ip_catalog
+launch_simulation
+open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
+source register_controller_tb.tcl
+update_compile_order -fileset sim_1
+current_wave_config {debouncer_tb_behav.wcfg}
+add_wave {{/register_controller_tb/clk}} {{/register_controller_tb/n_rst}} {{/register_controller_tb/mode}} {{/register_controller_tb/func}} {{/register_controller_tb/r_in}} {{/register_controller_tb/r_out}} {{/register_controller_tb/d_in}} 
+save_wave_config {/home/zach/busses/debouncer_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
+source register_controller_tb.tcl
+current_wave_config {debouncer_tb_behav.wcfg}
+add_wave {{/register_controller_tb/DUT/state}} {{/register_controller_tb/DUT/next_state}} 
+save_wave_config {/home/zach/busses/debouncer_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
+source register_controller_tb.tcl
+close_sim
+launch_simulation
+open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
+source register_controller_tb.tcl
+close_sim
+launch_simulation
+open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
+source register_controller_tb.tcl
+close_sim
+launch_simulation
+open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
+source register_controller_tb.tcl
+close_sim
+launch_simulation
+open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
+source register_controller_tb.tcl
+close_sim
+launch_simulation
+open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
+source register_controller_tb.tcl
+close_sim
+launch_simulation
+open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
+source register_controller_tb.tcl
+close_sim
+launch_simulation
+open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
+source register_controller_tb.tcl
+close_sim
+launch_simulation
+open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
+source register_controller_tb.tcl
+save_wave_config {/home/zach/busses/debouncer_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
+source register_controller_tb.tcl
+close_sim
+launch_simulation
+open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
+source register_controller_tb.tcl
+close_sim
+launch_simulation
+open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
+source register_controller_tb.tcl
+close_sim
+launch_simulation
+open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
+source register_controller_tb.tcl
+close_sim
+launch_simulation
+open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
+source register_controller_tb.tcl
+close_sim
+launch_simulation
+open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
+source register_controller_tb.tcl
+close_sim
+launch_simulation
+open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
+source register_controller_tb.tcl
+close_sim
+launch_simulation
+open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
+source register_controller_tb.tcl
+close_sim
+launch_simulation
+open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
+source register_controller_tb.tcl
+close_sim
+launch_simulation
+open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
+source register_controller_tb.tcl
+close_sim
+launch_simulation
+open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
+source register_controller_tb.tcl
+close_sim
+launch_simulation
+open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
+source register_controller_tb.tcl
+close_sim
+launch_simulation
+open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
+source register_controller_tb.tcl
+current_wave_config {debouncer_tb_behav.wcfg}
+add_wave {{/register_controller_tb/DUT/state_function}} 
+save_wave_config {/home/zach/busses/debouncer_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
+source register_controller_tb.tcl
+close_sim
+launch_simulation
+open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
+source register_controller_tb.tcl
+close_sim
+launch_simulation
+open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
+source register_controller_tb.tcl
+close_sim
+launch_simulation
+open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
+source register_controller_tb.tcl
+close_sim
+launch_simulation
+open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
+source register_controller_tb.tcl
+close_sim

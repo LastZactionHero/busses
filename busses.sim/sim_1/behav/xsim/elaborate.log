@@ -1,13 +1,17 @@
 Vivado Simulator 2018.1
 Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
-Running: /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xelab -wto 525c0e2fcf2f468a93e858eafd383a33 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot register_controller_tb_behav xil_defaultlib.register_controller_tb xil_defaultlib.glbl -log elaborate.log 
+Running: /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xelab -wto 525c0e2fcf2f468a93e858eafd383a33 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot busloader_tb_behav xil_defaultlib.busloader_tb xil_defaultlib.glbl -log elaborate.log 
 Using 8 slave threads.
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.debouncer(hold_threshold=1)
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.mode_set
 Compiling module xil_defaultlib.register_controller
-Compiling module xil_defaultlib.register_controller_tb
+Compiling module xil_defaultlib.busloader(hold_threshold=1)
+Compiling module xil_defaultlib.busloader_tb
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot register_controller_tb_behav
+Built simulation snapshot busloader_tb_behav
