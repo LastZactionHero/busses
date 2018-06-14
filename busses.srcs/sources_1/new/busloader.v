@@ -24,9 +24,11 @@ module busloader(
     input CLK100MHZ,
     input [3:0] sw,
     input [3:0] btn,
-    output [3:0] led
+    output [3:0] led,
+    output led0_b,
+    output led1_b
     );
-    parameter hold_threshold = 6;
+    parameter hold_threshold = 50_000_000;
 
     reg n_rst;
     wire [2:0] r_in;
@@ -40,35 +42,36 @@ module busloader(
     always @(posedge CLK100MHZ) begin
         n_rst = ~(btn[0] && btn[3]);
     end
-    
-    // LED always shows what's on the bus
-    assign led = n_rst ? bus : 4'b1111;
 
     // Button Debouncers
-    debouncer #(.hold_threshold(hold_threshold)) DB0(
+    debounce #(.n(hold_threshold)) DB0 (
         .clk(CLK100MHZ),
         .n_rst(n_rst),
         .btn(btn[0]),
-        .q(btn_db[0])
+        .trig(btn_db[0])
     );
-    debouncer #(.hold_threshold(hold_threshold)) DB1(
+    
+    debounce #(.n(hold_threshold)) DB1 (
         .clk(CLK100MHZ),
         .n_rst(n_rst),
         .btn(btn[1]),
-        .q(btn_db[1])
+        .trig(btn_db[1])
     );
-    debouncer #(.hold_threshold(hold_threshold)) DB2(
+    
+    debounce #(.n(hold_threshold)) DB2 (
         .clk(CLK100MHZ),
         .n_rst(n_rst),
         .btn(btn[2]),
-        .q(btn_db[2])
+        .trig(btn_db[2])
     );
-    debouncer #(.hold_threshold(hold_threshold)) DB3(
+    
+    debounce #(.n(hold_threshold)) DB3 (
         .clk(CLK100MHZ),
         .n_rst(n_rst),
         .btn(btn[3]),
-        .q(btn_db[3])
+        .trig(btn_db[3])
     );
+
     
     // Registers
     register R1(
@@ -96,14 +99,11 @@ module busloader(
           .q(bus)
     );     
 
-    wire mode_toggle;
-    assign mode_toggle = btn_db[0];
-
     // Mode Set
     mode_set MODE(
         .clk(CLK100MHZ),
         .n_rst(n_rst),
-        .toggle(mode_toggle),
+        .toggle(btn_db[0]),
         .mode(mode)
     );
     
@@ -128,4 +128,9 @@ module busloader(
     
     // Put switches on the bus if d_in set
     assign bus = d_in ? sw : 'bz;
+    assign led0_b = mode[0];
+    assign led1_b = mode[1];
+    
+    // LED always shows what's on the bus
+    assign led = bus;
 endmodule

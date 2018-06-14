@@ -61,13 +61,100 @@ proc step_failed { step } {
 }
 
 
+start_step init_design
+set ACTIVE_STEP init_design
+set rc [catch {
+  create_msg_db init_design.pb
+  set_param xicom.use_bs_reader 1
+  create_project -in_memory -part xc7a35ticsg324-1L
+  set_property board_part digilentinc.com:arty-a7-35:part0:1.0 [current_project]
+  set_property design_mode GateLvl [current_fileset]
+  set_param project.singleFileAddWarning.threshold 0
+  set_property webtalk.parent_dir C:/Users/Zach/Development/busses/busses.cache/wt [current_project]
+  set_property parent.project_path C:/Users/Zach/Development/busses/busses.xpr [current_project]
+  set_property ip_output_repo C:/Users/Zach/Development/busses/busses.cache/ip [current_project]
+  set_property ip_cache_permissions {read write} [current_project]
+  add_files -quiet C:/Users/Zach/Development/busses/busses.runs/synth_1/busloader.dcp
+  read_xdc C:/Users/Zach/Development/busses/busses.srcs/constrs_1/imports/verilog_multiplier/Arty-A7-35-Master.xdc
+  link_design -top busloader -part xc7a35ticsg324-1L
+  close_msg_db -file init_design.pb
+} RESULT]
+if {$rc} {
+  step_failed init_design
+  return -code error $RESULT
+} else {
+  end_step init_design
+  unset ACTIVE_STEP 
+}
+
+start_step opt_design
+set ACTIVE_STEP opt_design
+set rc [catch {
+  create_msg_db opt_design.pb
+  opt_design 
+  write_checkpoint -force busloader_opt.dcp
+  create_report "impl_1_opt_report_drc_0" "report_drc -file busloader_drc_opted.rpt -pb busloader_drc_opted.pb -rpx busloader_drc_opted.rpx"
+  close_msg_db -file opt_design.pb
+} RESULT]
+if {$rc} {
+  step_failed opt_design
+  return -code error $RESULT
+} else {
+  end_step opt_design
+  unset ACTIVE_STEP 
+}
+
+start_step place_design
+set ACTIVE_STEP place_design
+set rc [catch {
+  create_msg_db place_design.pb
+  if { [llength [get_debug_cores -quiet] ] > 0 }  { 
+    implement_debug_core 
+  } 
+  place_design 
+  write_checkpoint -force busloader_placed.dcp
+  create_report "impl_1_place_report_io_0" "report_io -file busloader_io_placed.rpt"
+  create_report "impl_1_place_report_utilization_0" "report_utilization -file busloader_utilization_placed.rpt -pb busloader_utilization_placed.pb"
+  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file busloader_control_sets_placed.rpt"
+  close_msg_db -file place_design.pb
+} RESULT]
+if {$rc} {
+  step_failed place_design
+  return -code error $RESULT
+} else {
+  end_step place_design
+  unset ACTIVE_STEP 
+}
+
+start_step route_design
+set ACTIVE_STEP route_design
+set rc [catch {
+  create_msg_db route_design.pb
+  route_design 
+  write_checkpoint -force busloader_routed.dcp
+  create_report "impl_1_route_report_drc_0" "report_drc -file busloader_drc_routed.rpt -pb busloader_drc_routed.pb -rpx busloader_drc_routed.rpx"
+  create_report "impl_1_route_report_methodology_0" "report_methodology -file busloader_methodology_drc_routed.rpt -pb busloader_methodology_drc_routed.pb -rpx busloader_methodology_drc_routed.rpx"
+  create_report "impl_1_route_report_power_0" "report_power -file busloader_power_routed.rpt -pb busloader_power_summary_routed.pb -rpx busloader_power_routed.rpx"
+  create_report "impl_1_route_report_route_status_0" "report_route_status -file busloader_route_status.rpt -pb busloader_route_status.pb"
+  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file busloader_timing_summary_routed.rpt -pb busloader_timing_summary_routed.pb -rpx busloader_timing_summary_routed.rpx -warn_on_violation "
+  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file busloader_incremental_reuse_routed.rpt"
+  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file busloader_clock_utilization_routed.rpt"
+  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file route_report_bus_skew_0.rpt -rpx route_report_bus_skew_0.rpx"
+  close_msg_db -file route_design.pb
+} RESULT]
+if {$rc} {
+  write_checkpoint -force busloader_routed_error.dcp
+  step_failed route_design
+  return -code error $RESULT
+} else {
+  end_step route_design
+  unset ACTIVE_STEP 
+}
+
 start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param xicom.use_bs_reader 1
-  open_checkpoint busloader_routed.dcp
-  set_property webtalk.parent_dir /home/zach/busses/busses.cache/wt [current_project]
   catch { write_mem_info -force busloader.mmi }
   write_bitstream -force busloader.bit -bin_file
   catch {write_debug_probes -quiet -force busloader}

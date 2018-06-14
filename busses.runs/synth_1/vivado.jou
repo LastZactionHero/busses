@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
 # Vivado v2018.1 (64-bit)
-# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
 # IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
-# Start of session at: Thu Jun  7 16:33:01 2018
-# Process ID: 22550
-# Current directory: /home/zach/busses/busses.runs/synth_1
-# Command line: vivado -log busloader.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source busloader.tcl
-# Log file: /home/zach/busses/busses.runs/synth_1/busloader.vds
-# Journal file: /home/zach/busses/busses.runs/synth_1/vivado.jou
+# Start of session at: Wed Jun 13 22:09:34 2018
+# Process ID: 6564
+# Current directory: C:/Users/Zach/Development/busses/busses.runs/synth_1
+# Command line: vivado.exe -log busloader.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source busloader.tcl
+# Log file: C:/Users/Zach/Development/busses/busses.runs/synth_1/busloader.vds
+# Journal file: C:/Users/Zach/Development/busses/busses.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source busloader.tcl -notrace

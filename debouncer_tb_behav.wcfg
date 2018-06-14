@@ -12,92 +12,84 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="895000001fs"></ZoomEndTime>
-      <Cursor1Time time="603541000fs"></Cursor1Time>
+      <ZoomEndTime time="935000001fs"></ZoomEndTime>
+      <Cursor1Time time="316090000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="159"></NameColumnWidth>
-      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+      <ValueColumnWidth column_width="62"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="20" />
-   <wvobject type="logic" fp_name="/busloader_tb/DUT/CLK100MHZ">
+   <WVObjectSize size="18" />
+   <wvobject fp_name="/busloader_tb/DUT/CLK100MHZ" type="logic">
       <obj_property name="ElementShortName">CLK100MHZ</obj_property>
       <obj_property name="ObjectShortName">CLK100MHZ</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/busloader_tb/DUT/sw">
+   <wvobject fp_name="/busloader_tb/DUT/sw" type="array">
       <obj_property name="ElementShortName">sw[3:0]</obj_property>
       <obj_property name="ObjectShortName">sw[3:0]</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/busloader_tb/DUT/btn">
+   <wvobject fp_name="/busloader_tb/DUT/btn" type="array">
       <obj_property name="ElementShortName">btn[3:0]</obj_property>
       <obj_property name="ObjectShortName">btn[3:0]</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/busloader_tb/DUT/led">
+   <wvobject fp_name="/busloader_tb/DUT/led" type="array">
       <obj_property name="ElementShortName">led[3:0]</obj_property>
       <obj_property name="ObjectShortName">led[3:0]</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/busloader_tb/DUT/n_rst">
+   <wvobject fp_name="/busloader_tb/DUT/n_rst" type="logic">
       <obj_property name="ElementShortName">n_rst</obj_property>
       <obj_property name="ObjectShortName">n_rst</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/busloader_tb/DUT/r_in">
+   <wvobject fp_name="/busloader_tb/DUT/r_in" type="array">
       <obj_property name="ElementShortName">r_in[2:0]</obj_property>
       <obj_property name="ObjectShortName">r_in[2:0]</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/busloader_tb/DUT/r_out">
+   <wvobject fp_name="/busloader_tb/DUT/r_out" type="array">
       <obj_property name="ElementShortName">r_out[2:0]</obj_property>
       <obj_property name="ObjectShortName">r_out[2:0]</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/busloader_tb/DUT/d_in">
+   <wvobject fp_name="/busloader_tb/DUT/d_in" type="logic">
       <obj_property name="ElementShortName">d_in</obj_property>
       <obj_property name="ObjectShortName">d_in</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/busloader_tb/DUT/bus">
+   <wvobject fp_name="/busloader_tb/DUT/bus" type="array">
       <obj_property name="ElementShortName">bus[3:0]</obj_property>
       <obj_property name="ObjectShortName">bus[3:0]</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/busloader_tb/DUT/btn_db">
+   <wvobject fp_name="/busloader_tb/DUT/btn_db" type="array">
       <obj_property name="ElementShortName">btn_db[3:0]</obj_property>
       <obj_property name="ObjectShortName">btn_db[3:0]</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/busloader_tb/DUT/mode">
+   <wvobject fp_name="/busloader_tb/DUT/mode" type="array">
       <obj_property name="ElementShortName">mode[1:0]</obj_property>
       <obj_property name="ObjectShortName">mode[1:0]</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/busloader_tb/DUT/mode_toggle">
-      <obj_property name="ElementShortName">mode_toggle</obj_property>
-      <obj_property name="ObjectShortName">mode_toggle</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/busloader_tb/DUT/func">
+   <wvobject fp_name="/busloader_tb/DUT/RegCtrl1/func" type="array">
       <obj_property name="ElementShortName">func[2:0]</obj_property>
       <obj_property name="ObjectShortName">func[2:0]</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/busloader_tb/DUT/R1/clk">
-      <obj_property name="ElementShortName">clk</obj_property>
-      <obj_property name="ObjectShortName">clk</obj_property>
+   <wvobject fp_name="/busloader_tb/DUT/RegCtrl1/r_in" type="array">
+      <obj_property name="ElementShortName">r_in[2:0]</obj_property>
+      <obj_property name="ObjectShortName">r_in[2:0]</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/busloader_tb/DUT/R1/n_rst">
-      <obj_property name="ElementShortName">n_rst</obj_property>
-      <obj_property name="ObjectShortName">n_rst</obj_property>
+   <wvobject fp_name="/busloader_tb/DUT/RegCtrl1/r_out" type="array">
+      <obj_property name="ElementShortName">r_out[2:0]</obj_property>
+      <obj_property name="ObjectShortName">r_out[2:0]</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/busloader_tb/DUT/R1/load">
-      <obj_property name="ElementShortName">load</obj_property>
-      <obj_property name="ObjectShortName">load</obj_property>
+   <wvobject fp_name="/busloader_tb/DUT/RegCtrl1/d_in" type="logic">
+      <obj_property name="ElementShortName">d_in</obj_property>
+      <obj_property name="ObjectShortName">d_in</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/busloader_tb/DUT/R1/r_out">
-      <obj_property name="ElementShortName">r_out</obj_property>
-      <obj_property name="ObjectShortName">r_out</obj_property>
+   <wvobject fp_name="/busloader_tb/DUT/RegCtrl1/state" type="array">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/busloader_tb/DUT/R1/data">
-      <obj_property name="ElementShortName">data[3:0]</obj_property>
-      <obj_property name="ObjectShortName">data[3:0]</obj_property>
+   <wvobject fp_name="/busloader_tb/DUT/RegCtrl1/state_function" type="array">
+      <obj_property name="ElementShortName">state_function[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state_function[2:0]</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/busloader_tb/DUT/R1/q">
-      <obj_property name="ElementShortName">q[3:0]</obj_property>
-      <obj_property name="ObjectShortName">q[3:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/busloader_tb/DUT/R1/store">
-      <obj_property name="ElementShortName">store[3:0]</obj_property>
-      <obj_property name="ObjectShortName">store[3:0]</obj_property>
+   <wvobject fp_name="/busloader_tb/DUT/RegCtrl1/next_state" type="array">
+      <obj_property name="ElementShortName">next_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[2:0]</obj_property>
    </wvobject>
 </wave_config>

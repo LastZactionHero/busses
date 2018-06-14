@@ -35,7 +35,7 @@ module register_controller(
     reg [2:0]state_function;
     reg [2:0]next_state;
 
-    always @(mode, func, state) begin
+    always @(posedge func, posedge state) begin
         case(mode)
         00: begin
             if(state == IDLE && func != 0)
@@ -66,7 +66,6 @@ module register_controller(
     begin
         if(n_rst == 0) begin
             state = IDLE;
-            next_state = IDLE;
             state_function = 0;
         end
         else

@@ -22,19 +22,20 @@ create_project -in_memory -part xc7a35ticsg324-1L
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/zach/busses/busses.cache/wt [current_project]
-set_property parent.project_path /home/zach/busses/busses.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/Zach/Development/busses/busses.cache/wt [current_project]
+set_property parent.project_path C:/Users/Zach/Development/busses/busses.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:arty-a7-35:part0:1.0 [current_project]
-set_property ip_output_repo /home/zach/busses/busses.cache/ip [current_project]
+set_property ip_output_repo c:/Users/Zach/Development/busses/busses.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  /home/zach/busses/busses.srcs/sources_1/new/debouncer.v
-  /home/zach/busses/busses.srcs/sources_1/new/mode.v
-  /home/zach/busses/busses.srcs/sources_1/new/register.v
-  /home/zach/busses/busses.srcs/sources_1/new/register_controller.v
-  /home/zach/busses/busses.srcs/sources_1/new/busloader.v
+  C:/Users/Zach/Development/busses/busses.srcs/sources_1/imports/new/clk_div.v
+  C:/Users/Zach/Development/busses/busses.srcs/sources_1/imports/new/debounce.v
+  C:/Users/Zach/Development/busses/busses.srcs/sources_1/new/mode.v
+  C:/Users/Zach/Development/busses/busses.srcs/sources_1/new/register.v
+  C:/Users/Zach/Development/busses/busses.srcs/sources_1/new/register_controller.v
+  C:/Users/Zach/Development/busses/busses.srcs/sources_1/new/busloader.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -44,8 +45,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/zach/busses/busses.srcs/constrs_1/imports/verilog_multiplier/Arty-A7-35-Master.xdc
-set_property used_in_implementation false [get_files /home/zach/busses/busses.srcs/constrs_1/imports/verilog_multiplier/Arty-A7-35-Master.xdc]
+read_xdc C:/Users/Zach/Development/busses/busses.srcs/constrs_1/imports/verilog_multiplier/Arty-A7-35-Master.xdc
+set_property used_in_implementation false [get_files C:/Users/Zach/Development/busses/busses.srcs/constrs_1/imports/verilog_multiplier/Arty-A7-35-Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]
