@@ -24,9 +24,13 @@ module busloader(
     input CLK100MHZ,
     input [3:0] sw,
     input [3:0] btn,
-    output [3:0] led
+    output [3:0] led,
+    output led0_b,
+    output led1_b,
+    output led2_b,
+    output led3_b
     );
-    parameter hold_threshold = 6;
+    parameter hold_threshold = 5_000_000;
 
     reg n_rst;
     wire [2:0] r_in;
@@ -43,6 +47,10 @@ module busloader(
     
     // LED always shows what's on the bus
     assign led = n_rst ? bus : 4'b1111;
+    assign led0_b = mode[0];
+    assign led1_b = mode[1];
+    assign led2_b = btn_db[0];
+    assign led3_b = btn[0];
 
     // Button Debouncers
     debouncer #(.hold_threshold(hold_threshold)) DB0(

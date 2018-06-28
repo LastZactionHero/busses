@@ -1,0 +1,1661 @@
+/*
+
+Xilinx Vivado v2018.1 (64-bit) [Major: 2018, Minor: 1]
+SW Build: 2188600 on Wed Apr  4 18:39:19 MDT 2018
+IP Build: 2185939 on Wed Apr  4 20:55:05 MDT 2018
+
+Process ID: 23765
+License: Customer
+
+Current time: 	Thu Jun 07 16:43:01 MDT 2018
+Time zone: 	Mountain Standard Time (America/Denver)
+
+OS: Ubuntu
+OS Version: 4.15.0-20-generic
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: :0
+Screen size: 1920x968
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 24 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	/opt/Xilinx/Vivado/2018.1/tps/lnx64/jre
+Java executable location: 	/opt/Xilinx/Vivado/2018.1/tps/lnx64/jre/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	zach
+User home directory: /home/zach
+User working directory: /home/zach/busses
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /opt/Xilinx/Vivado
+HDI_APPROOT: /opt/Xilinx/Vivado/2018.1
+RDI_DATADIR: /opt/Xilinx/Vivado/2018.1/data
+RDI_BINDIR: /opt/Xilinx/Vivado/2018.1/bin
+
+Vivado preferences file location: /home/zach/.Xilinx/Vivado/2018.1/vivado.xml
+Vivado preferences directory: /home/zach/.Xilinx/Vivado/2018.1/
+Vivado layouts directory: /home/zach/.Xilinx/Vivado/2018.1/layouts
+PlanAhead jar file location: 	/opt/Xilinx/Vivado/2018.1/lib/classes/planAhead.jar
+Vivado log file location: 	/home/zach/busses/vivado.log
+Vivado journal file location: 	/home/zach/busses/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-23765-vivado
+
+GUI allocated memory:	191 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 870 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/home/zach/busses/busses.xpr", 0); // q (O, ch)
+// [GUI Memory]: 70 MB (+71402kb) [00:00:06]
+// [Engine Memory]: 838 MB (+727116kb) [00:00:06]
+// Opening Vivado Project: /home/zach/busses/busses.xpr. Version: Vivado v2018.1 
+// bv (ch):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project /home/zach/busses/busses.xpr 
+// Tcl Message: open_project /home/zach/busses/busses.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.1/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 88 MB (+15001kb) [00:00:08]
+// [Engine Memory]: 943 MB (+65927kb) [00:00:08]
+// [Engine Memory]: 1,025 MB (+37037kb) [00:00:11]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,038 MB. GUI used memory: 40 MB. Current time: 6/7/18 4:43:06 PM MDT
+// Tcl Message: open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 6096.652 ; gain = 112.371 ; free physical = 6622 ; free virtual = 10351 
+// Project name: busses; location: /home/zach/busses; part: xc7a35ticsg324-1L
+dismissDialog("Open Project"); // bv (ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, busloader (busloader.v)]", 1); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, busloader (busloader.v)]", 1, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+// Elapsed time: 48 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, busloader (busloader.v)]", 1, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+// PAPropertyPanels.initPanels (busloader.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, busloader (busloader.v)]", 1, true, false, false, false, true, false); // B (D, ch) - Popup Trigger - Node
+selectMenuItem(PAResourceQtoS.SrcMenu_OPEN_SELECTED_SOURCE_FILES, "Open File"); // ac (ai, ch)
+// [Engine Memory]: 1,077 MB (+100kb) [00:07:12]
+// Elapsed time: 699 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 11); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Arty-A7-35-Master.xdc]", 13, false, false, false, false, false, true); // B (D, ch) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Arty-A7-35-Master.xdc]", 13, false, false, false, false, false, true); // B (D, ch) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "busloader.v", 1); // k (j, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Arty-A7-35-Master.xdc]", 13, false, false, false, false, true, false); // B (D, ch) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Source File Properties..."); // ac (ai, ch)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Arty-A7-35-Master.xdc]", 13, false, false, false, false, true, false); // B (D, ch) - Popup Trigger
+selectMenuItem(PAResourceQtoS.SrcMenu_OPEN_SELECTED_SOURCE_FILES, "Open File"); // ac (ai, ch)
+selectCodeEditor("Arty-A7-35-Master.xdc", 99, 113); // cd (w, ch)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 26 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("Arty-A7-35-Master.xdc", 543, 110); // cd (w, ch)
+selectCodeEditor("Arty-A7-35-Master.xdc", 543, 110, false, false, false, false, true); // cd (w, ch) - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("Arty-A7-35-Master.xdc", 333, 203); // cd (w, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "busloader.v", 1); // k (j, ch)
+selectCodeEditor("busloader.v", 164, 219); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 21 seconds
+selectCodeEditor("busloader.v", 116, 220); // cd (w, ch)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,101 MB. GUI used memory: 43 MB. Current time: 6/7/18 4:57:24 PM MDT
+selectCodeEditor("busloader.v", 119, 226); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 23 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (ch): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bv (ch):  Resetting Runs : addNotify
+dismissDialog("Run Synthesis"); // A (ch)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ch): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bv (ch):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ch)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// [Engine Memory]: 1,132 MB (+1920kb) [00:14:57]
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Thu Jun  7 16:57:52 2018] Launched synth_1... Run output will be captured here: /home/zach/busses/busses.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bv (ch)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,133 MB. GUI used memory: 43 MB. Current time: 6/7/18 4:57:54 PM MDT
+// TclEventType: RUN_COMPLETED
+// ah (ch): Synthesis Completed: addNotify
+// Elapsed time: 90 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (ch): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bv (ch):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ch)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Thu Jun  7 16:59:26 2018] Launched impl_1... Run output will be captured here: /home/zach/busses/busses.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bv (ch)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ch): Implementation Completed: addNotify
+// [GUI Memory]: 95 MB (+2078kb) [00:18:44]
+// Elapsed time: 15152 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (ch): Launch Runs: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,134 MB. GUI used memory: 46 MB. Current time: 6/7/18 9:12:02 PM MDT
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 3 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+dismissDialog("Launch Runs"); // f (ch)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Jun  7 21:12:03 2018] Launched impl_1... Run output will be captured here: /home/zach/busses/busses.runs/impl_1/runme.log 
+// Elapsed time: 47 seconds
+selectCodeEditor("busloader.v", 228, 280); // cd (w, ch)
+selectCodeEditor("busloader.v", 223, 275); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_COMPLETED
+// ah (ch): Bitstream Generation Completed: addNotify
+// Elapsed time: 51 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bv (ch):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// aI (ch): Feedback Request: addNotify
+dismissDialog("Open Hardware Manager"); // bv (ch)
+selectButton(PAResourceTtoZ.TouchpointSurveyDialog_REMIND_ME_LATER, "Remind me Later"); // a (aI)
+selectButton(PAResourceTtoZ.TouchpointSurveyDialog_REMIND_ME_LATER, "Remind me Later"); // a (aI)
+dismissDialog("Feedback Request"); // aI (ch)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cM, ch)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cM, ch)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,178 MB. GUI used memory: 48 MB. Current time: 6/7/18 9:13:47 PM MDT
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-2222] Launching hw_server... INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.1   **** Build date : Apr  4 2018-18:56:09     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 10 seconds
+expandTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210319A7664EA (0) ; Closed", 1); // t (O, ch)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210319A7664EA (0) ; Closed", 1, "xilinx_tcf/Digilent/210319A7664EA (0)", 0, false, false, false, false, false, true); // t (O, ch) - Double Click
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210319A7664EA (0) ; Closed", 1, "xilinx_tcf/Digilent/210319A7664EA (0)", 0, false, false, false, false, true, false); // t (O, ch) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_TARGET, "Open Target"); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_TARGET
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target {localhost:3121/xilinx_tcf/Digilent/210319A7664EA} 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319A7664EA 
+// bv (ch):  Open Target : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zach/busses/busses.runs/impl_1/busloader.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// [Engine Memory]: 1,684 MB (+519614kb) [04:31:07]
+dismissDialog("Open Target"); // bv (ch)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,700 MB. GUI used memory: 50 MB. Current time: 6/7/18 9:14:02 PM MDT
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "xc7a35t_0 (1)", 0, true, false, false, false, true, false); // t (O, ch) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ch): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null); // q (ai, bB)
+setFileChooser("/home/zach/busses/busses.runs/impl_1/busloader.bit");
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null); // q (ai, bB)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bv (ch):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ch)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zach/busses/busses.runs/impl_1/busloader.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 8 seconds
+dismissDialog("Program Device"); // bv (ch)
+// Elapsed time: 38 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Arty-A7-35-Master.xdc", 1); // k (j, ch)
+// Elapsed time: 785 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "busloader.v", 0); // k (j, ch)
+selectCodeEditor("busloader.v", 138, 248); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,742 MB. GUI used memory: 51 MB. Current time: 6/7/18 9:28:13 PM MDT
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ch): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bv (ch):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ch)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ch): Launch Runs: addNotify
+// Elapsed time: 6753 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 6760 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (ch)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Jun  7 23:21:04 2018] Launched synth_1... Run output will be captured here: /home/zach/busses/busses.runs/synth_1/runme.log [Thu Jun  7 23:21:04 2018] Launched impl_1... Run output will be captured here: /home/zach/busses/busses.runs/impl_1/runme.log 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,758 MB. GUI used memory: 52 MB. Current time: 6/7/18 11:21:05 PM MDT
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ch): Bitstream Generation Completed: addNotify
+// [GUI Memory]: 102 MB (+2819kb) [06:41:19]
+// Elapsed time: 198 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bv (ch):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,794 MB. GUI used memory: 53 MB. Current time: 6/7/18 11:24:25 PM MDT
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (bv)
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (bv)
+// 'dO' command handler elapsed time: 4 seconds
+// [Engine Memory]: 1,822 MB (+55644kb) [06:41:32]
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// aI (ch): Feedback Request: addNotify
+selectButton(PAResourceTtoZ.TouchpointSurveyDialog_REMIND_ME_LATER, "Remind me Later"); // a (aI)
+selectButton(PAResourceTtoZ.TouchpointSurveyDialog_REMIND_ME_LATER, "Remind me Later"); // a (aI)
+dismissDialog("Feedback Request"); // aI (ch)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "xc7a35t_0 (1)", 0, true, false, false, false, true, false); // t (O, ch) - Popup Trigger - Node
+selectButton("HStatusBar_ProgressStatusItem_Cancel", "Cancel"); // NullButton (af, ch)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "xc7a35t_0 (1)", 0, true, false, false, false, true, false); // t (O, ch) - Popup Trigger - Node
+selectButton(PAResourceOtoP.ProgramDebugTab_REFRESH_DEVICE, "Refresh device"); // h (cM, ch)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton(PAResourceOtoP.ProgramDebugTab_REFRESH_DEVICE, "Refresh device"); // h (cM, ch)
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,862 MB. GUI used memory: 52 MB. Current time: 6/7/18 11:24:45 PM MDT
+// TclEventType: DESIGN_CLOSE
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.1 INFO: [Device 21-403] Loading part xc7a35ticsg324-1L INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+// Tcl Message: open_run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:26 . Memory (MB): peak = 6909.859 ; gain = 116.953 ; free physical = 5875 ; free virtual = 9606 
+// Tcl Message: INFO: [Common 17-344] 'open_run' was cancelled 
+// CommandFailedException: ERROR: [Common 17-69] Command failed:  
+dismissDialog("Open Implemented Design"); // bv (ch)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "xc7a35t_0 (1)", 0, true, false, false, false, true, false); // t (O, ch) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_BBR_PROGRAMMING, "Program BBR Key..."); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_BBR_PROGRAMMING
+// ax (ch): Program BBR Key: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ax)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ax)
+dismissDialog("Program BBR Key"); // ax (ch)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "xc7a35t_0 (1)", 0, true, false, false, false, true, false); // t (O, ch) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ch): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bv (ch):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ch)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zach/busses/busses.runs/impl_1/busloader.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bv (ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Arty-A7-35-Master.xdc", 1); // k (j, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "busloader.v", 0); // k (j, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Arty-A7-35-Master.xdc", 1); // k (j, ch)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "busloader.v", 0); // k (j, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Arty-A7-35-Master.xdc", 1); // k (j, ch)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "busloader.v", 0); // k (j, ch)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,891 MB. GUI used memory: 52 MB. Current time: 6/7/18 11:32:35 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,891 MB. GUI used memory: 51 MB. Current time: 6/8/18 8:28:07 AM MDT
+// [GUI Memory]: 107 MB (+159kb) [16:12:16]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,891 MB. GUI used memory: 50 MB. Current time: 6/8/18 8:58:07 AM MDT
+// Elapsed time: 34621 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, ch)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // Z (ch)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, ch)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, ch)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // Z (ch)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_PROJECT, "Open..."); // ac (ch)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, ch)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// Elapsed time: 21 seconds
+setFileChooser("/home/zach/project_1/project_1.xpr");
+// 'i' command handler elapsed time: 22 seconds
+selectButton("PAResourceOtoP.PABaseTab_WOULD_YOU_LIKE_TO_CLOSE_CURRENTLY_Yes", "Yes"); // JButton (A, G)
+// Opening Vivado Project: /home/zach/project_1/project_1.xpr. Version: Vivado v2018.1 
+// bv (ch):  Open Project : addNotify
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// Tcl Message: open_project /home/zach/project_1/project_1.xpr 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// [Engine Memory]: 1,915 MB (+2443kb) [16:20:35]
+// TclEventType: PROJECT_NEW
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.1/data/ip'. 
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,939 MB. GUI used memory: 56 MB. Current time: 6/8/18 9:03:33 AM MDT
+// Project name: project_1; location: /home/zach/project_1; part: xc7a35ticsg324-1L
+// TclEventType: PROJECT_CLOSE
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,876 MB. GUI used memory: 50 MB. Current time: 6/8/18 9:03:34 AM MDT
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: current_project busses 
+// Tcl Message: close_project 
+dismissDialog("Open Project"); // bv (ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sw_btn_led (sw_btn_led.v)]", 1, false, false, false, false, false, true); // B (D, ch) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sw_btn_led (sw_btn_led.v)]", 1, false, false, false, false, false, true); // B (D, ch) - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Arty_sw_btn_Demo.xdc]", 4, false, false, false, false, false, true); // B (D, ch) - Double Click
+// Elapsed time: 13 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, ch)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // Z (ch)
+selectMenuItem(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "/home/zach/busses/busses.xpr"); // ac (ch)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, ch)
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,861 MB. GUI used memory: 44 MB. Current time: 6/8/18 9:04:04 AM MDT
+// bv (ch):  Open Project : addNotify
+// Opening Vivado Project: /home/zach/busses/busses.xpr. Version: Vivado v2018.1 
+selectButton("PAResourceOtoP.PABaseTab_WOULD_YOU_LIKE_TO_CLOSE_CURRENTLY_Yes", "Yes"); // JButton (A, G)
+// Tcl Message: close_project 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project /home/zach/busses/busses.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.1/data/ip'. 
+// Project name: busses; location: /home/zach/busses; part: xc7a35ticsg324-1L
+dismissDialog("Open Project"); // bv (ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 101 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, busloader (busloader.v)]", 1, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, busloader (busloader.v)]", 1, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, busloader (busloader.v)]", 1, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, busloader (busloader.v)]", 1, true, false, false, false, true, false); // B (D, ch) - Popup Trigger - Node
+selectMenuItem(PAResourceQtoS.SrcMenu_OPEN_SELECTED_SOURCE_FILES, "Open File"); // ac (ai, ch)
+// Elapsed time: 19 seconds
+selectCodeEditor("busloader.v", 966, 100); // cd (w, ch)
+selectCodeEditor("busloader.v", 46, 295); // cd (w, ch)
+selectCodeEditor("busloader.v", 46, 295, false, false, false, false, true); // cd (w, ch) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ch): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bv (ch):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ch)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ch): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 4 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (ch)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Fri Jun  8 09:06:56 2018] Launched synth_1... Run output will be captured here: /home/zach/busses/busses.runs/synth_1/runme.log [Fri Jun  8 09:06:56 2018] Launched impl_1... Run output will be captured here: /home/zach/busses/busses.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ch): Bitstream Generation Completed: addNotify
+// Elapsed time: 189 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bv (ch):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// aI (ch): Feedback Request: addNotify
+dismissDialog("Open Hardware Manager"); // bv (ch)
+selectButton(PAResourceTtoZ.TouchpointSurveyDialog_REMIND_ME_LATER, "Remind me Later"); // a (aI)
+selectButton(PAResourceTtoZ.TouchpointSurveyDialog_REMIND_ME_LATER, "Remind me Later"); // a (aI)
+dismissDialog("Feedback Request"); // aI (ch)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cM, ch)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cM, ch)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bv (ch):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-2222] Launching hw_server... INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.1   **** Build date : Apr  4 2018-18:56:09     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319A7664EA 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zach/busses/busses.runs/impl_1/busloader.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bv (ch)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "xc7a35t_0 (1)", 0, true, false, false, false, true, false); // t (O, ch) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ch): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bv (ch):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ch)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zach/busses/busses.runs/impl_1/busloader.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bv (ch)
+selectCodeEditor("busloader.v", 500, 268); // cd (w, ch)
+selectCodeEditor("busloader.v", 181, 249); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ch)
+// TclEventType: DG_GRAPH_GENERATED
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ch): Synthesis is Out-of-date: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bv (ch):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ch)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ch): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 4 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (ch)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Fri Jun  8 09:10:35 2018] Launched synth_1... Run output will be captured here: /home/zach/busses/busses.runs/synth_1/runme.log [Fri Jun  8 09:10:35 2018] Launched impl_1... Run output will be captured here: /home/zach/busses/busses.runs/impl_1/runme.log 
+// Elapsed time: 50 seconds
+selectCodeEditor("busloader.v", 288, 224); // cd (w, ch)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 108 seconds
+selectCodeEditor("busloader.v", 955, 16); // cd (w, ch)
+// TclEventType: RUN_COMPLETED
+// ah (ch): Bitstream Generation Completed: addNotify
+// Elapsed time: 229 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+// aI (ch): Feedback Request: addNotify
+dismissDialog("Bitstream Generation Completed"); // ah (ch)
+selectButton(PAResourceTtoZ.TouchpointSurveyDialog_NO, "No"); // a (aI)
+selectButton(PAResourceTtoZ.TouchpointSurveyDialog_NO, "No"); // a (aI)
+dismissDialog("Feedback Request"); // aI (ch)
+selectButton("PAResourceTtoZ.TouchpointSurveyDialog_USE_TOOLS_OPTIONS_WINDOWS_BEHAVIOR_OK", "OK"); // JButton (A, G)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "xc7a35t_0 (1)", 0, true, false, false, false, true, false); // t (O, ch) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ch): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bv (ch):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ch)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zach/busses/busses.runs/impl_1/busloader.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bv (ch)
+// Elapsed time: 130 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "xc7a35t_0 (1)", 0, true, false, false, false, true, false); // t (O, ch) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ch): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bv (ch):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ch)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zach/busses/busses.runs/impl_1/busloader.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bv (ch)
+// Elapsed time: 319 seconds
+selectCodeEditor("busloader.v", 1040, 55); // cd (w, ch)
+selectCodeEditor("busloader.v", 115, 321); // cd (w, ch)
+selectCodeEditor("busloader.v", 62, 326); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 12 seconds
+selectCodeEditor("busloader.v", 72, 303); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("busloader.v", 48, 274); // cd (w, ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,953 MB. GUI used memory: 53 MB. Current time: 6/8/18 9:25:13 AM MDT
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("busloader.v", 191, 109); // cd (w, ch)
+selectCodeEditor("busloader.v", 191, 109, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "busloader.v", 'c'); // cd (w, ch)
+selectCodeEditor("busloader.v", 149, 202); // cd (w, ch)
+selectCodeEditor("busloader.v", 149, 202, false, false, false, false, true); // cd (w, ch) - Double Click
+selectCodeEditor("busloader.v", 275, 116); // cd (w, ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, ch) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, busloader (busloader.v)]", 1); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, busloader (busloader.v), DB0 : debouncer (debouncer.v)]", 2, false, false, false, false, false, true); // B (D, ch) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, busloader (busloader.v), DB0 : debouncer (debouncer.v)]", 2, false, false, false, false, false, true); // B (D, ch) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, busloader (busloader.v), DB0 : debouncer (debouncer.v)]", 2, false, false, false, false, false, true); // B (D, ch) - Double Click
+selectCodeEditor("busloader.v", 78, 49); // cd (w, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "busloader.v", 1); // k (j, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, busloader (busloader.v), DB0 : debouncer (debouncer.v)]", 2, false, false, false, false, false, true); // B (D, ch) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, busloader (busloader.v), DB0 : debouncer (debouncer.v)]", 2, false, false, false, false, true, false); // B (D, ch) - Popup Trigger
+selectMenuItem(PAResourceQtoS.SrcMenu_OPEN_SELECTED_SOURCE_FILES, "Open File"); // ac (ai, ch)
+// Elapsed time: 15 seconds
+selectCodeEditor("debouncer.v", 249, 129); // cd (w, ch)
+selectCodeEditor("debouncer.v", 249, 129, false, false, false, false, true); // cd (w, ch) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,999 MB. GUI used memory: 53 MB. Current time: 6/8/18 9:26:28 AM MDT
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ch): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bv (ch):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ch)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ch): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 4 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (ch)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Fri Jun  8 09:26:37 2018] Launched synth_1... Run output will be captured here: /home/zach/busses/busses.runs/synth_1/runme.log [Fri Jun  8 09:26:37 2018] Launched impl_1... Run output will be captured here: /home/zach/busses/busses.runs/impl_1/runme.log 
+// Elapsed time: 18 seconds
+selectCodeEditor("debouncer.v", 912, 69); // cd (w, ch)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (ch): Implementation Failed: addNotify
+// Elapsed time: 177 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ch)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "busloader.v", 1); // k (j, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, busloader (busloader.v), DB0 : debouncer (debouncer.v)]", 2, false, false, false, false, true, false); // B (D, ch) - Popup Trigger
+selectMenuItem(PAResourceQtoS.SrcMenu_OPEN_SELECTED_SOURCE_FILES, "Open File"); // ac (ai, ch)
+selectCodeEditor("debouncer.v", 124, 82); // cd (w, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "busloader.v", 1); // k (j, ch)
+// Elapsed time: 12 seconds
+selectCodeEditor("busloader.v", 220, 141); // cd (w, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debouncer.v", 2); // k (j, ch)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "busloader.v", 1); // k (j, ch)
+// TclEventType: DG_GRAPH_GENERATED
+// [Engine Memory]: 2,017 MB (+6334kb) [16:47:43]
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("busloader.v", 225, 203); // cd (w, ch)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,033 MB. GUI used memory: 53 MB. Current time: 6/8/18 9:30:48 AM MDT
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ch): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bv (ch):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ch)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ch): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 3 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (ch)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Fri Jun  8 09:30:59 2018] Launched synth_1... Run output will be captured here: /home/zach/busses/busses.runs/synth_1/runme.log [Fri Jun  8 09:30:59 2018] Launched impl_1... Run output will be captured here: /home/zach/busses/busses.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ch): Bitstream Generation Completed: addNotify
+// Elapsed time: 192 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, ch) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "xc7a35t_0 (1)", 0, true, false, false, false, true, false); // t (O, ch) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ch): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bv (ch):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ch)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zach/busses/busses.runs/impl_1/busloader.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bv (ch)
+// Elapsed time: 37 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debouncer.v", 1); // k (j, ch)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "busloader.v", 0); // k (j, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debouncer.v", 1); // k (j, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "busloader.v", 0); // k (j, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debouncer.v", 1); // k (j, ch)
+// Elapsed time: 15 seconds
+selectCodeEditor("debouncer.v", 151, 141); // cd (w, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "busloader.v", 0); // k (j, ch)
+selectCodeEditor("busloader.v", 42, 176); // cd (w, ch)
+selectCodeEditor("busloader.v", 42, 176, false, false, false, false, true); // cd (w, ch) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debouncer.v", 1); // k (j, ch)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "busloader.v", 0); // k (j, ch)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debouncer.v", 1); // k (j, ch)
+// Elapsed time: 32 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "busloader.v", 0); // k (j, ch)
+selectCodeEditor("busloader.v", 217, 249); // cd (w, ch)
+typeControlKey((HResource) null, "busloader.v", 'c'); // cd (w, ch)
+typeControlKey((HResource) null, "busloader.v", 'v'); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 21 seconds
+selectCodeEditor("busloader.v", 226, 113); // cd (w, ch)
+selectCodeEditor("busloader.v", 226, 113, false, false, false, false, true); // cd (w, ch) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,090 MB. GUI used memory: 53 MB. Current time: 6/8/18 9:37:43 AM MDT
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ch): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bv (ch):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ch)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ch): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 3 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (ch)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Fri Jun  8 09:37:50 2018] Launched synth_1... Run output will be captured here: /home/zach/busses/busses.runs/synth_1/runme.log [Fri Jun  8 09:37:50 2018] Launched impl_1... Run output will be captured here: /home/zach/busses/busses.runs/impl_1/runme.log 
+selectCodeEditor("busloader.v", 1020, 402); // cd (w, ch)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ch): Bitstream Generation Completed: addNotify
+// Elapsed time: 292 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ch)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "xc7a35t_0 (1)", 0, true, false, false, false, true, false); // t (O, ch) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ch): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bv (ch):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ch)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zach/busses/busses.runs/impl_1/busloader.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bv (ch)
+// Elapsed time: 52 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debouncer.v", 1); // k (j, ch)
+selectCodeEditor("debouncer.v", 235, 575); // cd (w, ch)
+selectCodeEditor("debouncer.v", 55, 388); // cd (w, ch)
+selectCodeEditor("debouncer.v", 60, 401); // cd (w, ch)
+selectCodeEditor("debouncer.v", 75, 548); // cd (w, ch)
+typeControlKey((HResource) null, "debouncer.v", 'c'); // cd (w, ch)
+typeControlKey((HResource) null, "debouncer.v", 'v'); // cd (w, ch)
+selectCodeEditor("debouncer.v", 67, 274); // cd (w, ch)
+// Elapsed time: 14 seconds
+selectCodeEditor("debouncer.v", 226, 532); // cd (w, ch)
+selectCodeEditor("debouncer.v", 76, 350); // cd (w, ch)
+selectCodeEditor("debouncer.v", 198, 308); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 26 seconds
+selectCodeEditor("debouncer.v", 133, 552); // cd (w, ch)
+selectCodeEditor("debouncer.v", 133, 552, false, false, false, false, true); // cd (w, ch) - Double Click
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("debouncer.v", 131, 594); // cd (w, ch)
+selectCodeEditor("debouncer.v", 131, 594, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "debouncer.v", 'v'); // cd (w, ch)
+typeControlKey(null, null, 'z');
+// HMemoryUtils.trashcanNow. Engine heap size: 2,115 MB. GUI used memory: 55 MB. Current time: 6/8/18 9:44:58 AM MDT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 2,123 MB (+5292kb) [17:02:13]
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 13 seconds
+selectCodeEditor("debouncer.v", 339, 538); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,147 MB. GUI used memory: 54 MB. Current time: 6/8/18 9:45:53 AM MDT
+// Elapsed time: 50 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ch): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bv (ch):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ch)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ch): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (ch)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Fri Jun  8 09:46:02 2018] Launched synth_1... Run output will be captured here: /home/zach/busses/busses.runs/synth_1/runme.log [Fri Jun  8 09:46:02 2018] Launched impl_1... Run output will be captured here: /home/zach/busses/busses.runs/impl_1/runme.log 
+// Elapsed time: 20 seconds
+selectCodeEditor("debouncer.v", 73, 460); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, ch)
+// TclEventType: DG_GRAPH_GENERATED
+// bv (ch):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.StateMonitor_OK_TO_CANCEL_YOUR_RUNNING_SYNTHESIS_Cancel Process", "Cancel Process"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, ch)
+dismissDialog("Resetting Runs"); // bv (ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ch): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bv (ch):  Resetting Runs : addNotify
+// f (ch): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // A (ch)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (ch)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Fri Jun  8 09:46:40 2018] Launched synth_1... Run output will be captured here: /home/zach/busses/busses.runs/synth_1/runme.log [Fri Jun  8 09:46:40 2018] Launched impl_1... Run output will be captured here: /home/zach/busses/busses.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ch): Bitstream Generation Completed: addNotify
+// Elapsed time: 334 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "xc7a35t_0 (1)", 0, true, false, false, false, true, false); // t (O, ch) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ch): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bv (ch):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ch)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zach/busses/busses.runs/impl_1/busloader.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bv (ch)
+// Elapsed time: 40 seconds
+selectCodeEditor("debouncer.v", 226, 581); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,180 MB. GUI used memory: 54 MB. Current time: 6/8/18 9:53:08 AM MDT
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ch): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bv (ch):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ch)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ch): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (ch)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Fri Jun  8 09:53:23 2018] Launched synth_1... Run output will be captured here: /home/zach/busses/busses.runs/synth_1/runme.log [Fri Jun  8 09:53:23 2018] Launched impl_1... Run output will be captured here: /home/zach/busses/busses.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ch): Bitstream Generation Completed: addNotify
+// Elapsed time: 276 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ch)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "xc7a35t_0 (1)", 0, true, false, false, false, true, false); // t (O, ch) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ch): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bv (ch):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ch)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zach/busses/busses.runs/impl_1/busloader.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bv (ch)
+// Elapsed time: 31 seconds
+selectCodeEditor("debouncer.v", 103, 509); // cd (w, ch)
+// Elapsed time: 10 seconds
+selectCodeEditor("debouncer.v", 289, 577); // cd (w, ch)
+selectCodeEditor("debouncer.v", 82, 396); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("debouncer.v", 272, 289); // cd (w, ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 12 seconds
+selectCodeEditor("debouncer.v", 94, 477); // cd (w, ch)
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,212 MB. GUI used memory: 54 MB. Current time: 6/8/18 9:59:13 AM MDT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ch): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bv (ch):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ch)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ch): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (ch)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Fri Jun  8 09:59:26 2018] Launched synth_1... Run output will be captured here: /home/zach/busses/busses.runs/synth_1/runme.log [Fri Jun  8 09:59:26 2018] Launched impl_1... Run output will be captured here: /home/zach/busses/busses.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ch): Bitstream Generation Completed: addNotify
+// Elapsed time: 254 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ch)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "xc7a35t_0 (1)", 0, true, false, false, false, true, false); // t (O, ch) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ch): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bv (ch):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ch)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zach/busses/busses.runs/impl_1/busloader.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bv (ch)
+// Elapsed time: 41 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "busloader.v", 0); // k (j, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debouncer.v", 1); // k (j, ch)
+selectCodeEditor("debouncer.v", 84, 430); // cd (w, ch)
+// Elapsed time: 17 seconds
+selectCodeEditor("debouncer.v", 198, 428); // cd (w, ch)
+selectCodeEditor("debouncer.v", 82, 456); // cd (w, ch)
+selectCodeEditor("debouncer.v", 85, 415); // cd (w, ch)
+selectCodeEditor("debouncer.v", 202, 416); // cd (w, ch)
+// Elapsed time: 50 seconds
+selectCodeEditor("debouncer.v", 224, 403); // cd (w, ch)
+// Elapsed time: 60 seconds
+selectCodeEditor("debouncer.v", 116, 580); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 2,237 MB (+8001kb) [17:24:16]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,245 MB. GUI used memory: 55 MB. Current time: 6/8/18 10:07:13 AM MDT
+// Elapsed time: 44 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ch): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bv (ch):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ch)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ch): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 3 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (ch)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Fri Jun  8 10:07:53 2018] Launched synth_1... Run output will be captured here: /home/zach/busses/busses.runs/synth_1/runme.log [Fri Jun  8 10:07:53 2018] Launched impl_1... Run output will be captured here: /home/zach/busses/busses.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ch): Bitstream Generation Completed: addNotify
+// Elapsed time: 202 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ch)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "xc7a35t_0 (1)", 0, true, false, false, false, true, false); // t (O, ch) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ch): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bv (ch):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ch)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zach/busses/busses.runs/impl_1/busloader.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bv (ch)
+// Elapsed time: 32 seconds
+selectCodeEditor("debouncer.v", 108, 578); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ch): Synthesis is Out-of-date: addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bv (ch):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ch)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ch): Launch Runs: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (ch)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Fri Jun  8 10:12:01 2018] Launched synth_1... Run output will be captured here: /home/zach/busses/busses.runs/synth_1/runme.log [Fri Jun  8 10:12:01 2018] Launched impl_1... Run output will be captured here: /home/zach/busses/busses.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 106 seconds
+selectCodeEditor("debouncer.v", 961, 173); // cd (w, ch)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ch): Bitstream Generation Completed: addNotify
+// Elapsed time: 95 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ch)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "xc7a35t_0 (1)", 0, true, false, false, false, true, false); // t (O, ch) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ch): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bv (ch):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ch)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zach/busses/busses.runs/impl_1/busloader.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bv (ch)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210319A7664EA 
+// n (ch): Close Hardware Target: addNotify
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 44 seconds
+selectCodeEditor("debouncer.v", 1105, 287); // cd (w, ch)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, ch)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// C (ch): Settings: addNotify
+// [GUI Memory]: 123 MB (+11097kb) [17:33:25]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,267 MB. GUI used memory: 76 MB. Current time: 6/8/18 10:16:20 AM MDT
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (C)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (C)
+dismissDialog("Settings"); // C (ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, ch) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, ch) - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ch)
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // D
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debouncer.v", 0); // k (j, ch)
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, busloader (busloader.v), RegCtrl1 : register_controller (register_controller.v)]", 10, false, false, false, false, false, true); // B (D, ch) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, busloader (busloader.v), RegCtrl1 : register_controller (register_controller.v)]", 10, false, false, false, false, false, true); // B (D, ch) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, busloader (busloader.v), RegCtrl1 : register_controller (register_controller.v)]", 10, false, false, false, false, false, true); // B (D, ch) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, busloader (busloader.v), RegCtrl1 : register_controller (register_controller.v)]", 10, false, false, false, false, false, true); // B (D, ch) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, busloader (busloader.v), RegCtrl1 : register_controller (register_controller.v)]", 10, false, false, false, false, true, false); // B (D, ch) - Popup Trigger
+selectMenuItem(PAResourceQtoS.SrcMenu_OPEN_SELECTED_SOURCE_FILES, "Open File"); // ac (ai, ch)
+selectCodeEditor("register_controller.v", 174, 444); // cd (w, ch)
+selectCodeEditor("register_controller.v", 174, 444, false, false, false, true, false); // cd (w, ch) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ac (ai, ch)
+// Elapsed time: 137 seconds
+selectCodeEditor("register_controller.v", 869, 424); // cd (w, ch)
+selectCodeEditor("register_controller.v", 301, 477); // cd (w, ch)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("register_controller.v", 346, 522); // cd (w, ch)
+selectCodeEditor("register_controller.v", 39, 515, false, false, false, true, false); // cd (w, ch) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_TOGGLE_LINE_COMMENTS, "Toggle Line Comments"); // ac (ai, ch)
+selectCodeEditor("register_controller.v", 126, 425); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,291 MB. GUI used memory: 71 MB. Current time: 6/8/18 10:19:58 AM MDT
+// Elapsed time: 170 seconds
+selectCodeEditor("register_controller.v", 78, 209); // cd (w, ch)
+// Elapsed time: 63 seconds
+selectCodeEditor("register_controller.v", 295, 340); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("register_controller.v", 76, 386); // cd (w, ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("register_controller.v", 249, 302); // cd (w, ch)
+selectCodeEditor("register_controller.v", 207, 249); // cd (w, ch)
+// Elapsed time: 83 seconds
+selectCodeEditor("register_controller.v", 368, 326); // cd (w, ch)
+selectCodeEditor("register_controller.v", 169, 384); // cd (w, ch)
+selectCodeEditor("register_controller.v", 213, 340); // cd (w, ch)
+selectCodeEditor("register_controller.v", 234, 340); // cd (w, ch)
+selectCodeEditor("register_controller.v", 108, 401); // cd (w, ch)
+// Elapsed time: 151 seconds
+selectCodeEditor("register_controller.v", 183, 281); // cd (w, ch)
+selectCodeEditor("register_controller.v", 168, 435); // cd (w, ch)
+selectCodeEditor("register_controller.v", 177, 437); // cd (w, ch)
+// Elapsed time: 12 seconds
+selectCodeEditor("register_controller.v", 118, 275); // cd (w, ch)
+selectCodeEditor("register_controller.v", 59, 447); // cd (w, ch)
+selectCodeEditor("register_controller.v", 222, 273); // cd (w, ch)
+// Elapsed time: 14 seconds
+selectCodeEditor("register_controller.v", 142, 277); // cd (w, ch)
+selectCodeEditor("register_controller.v", 142, 277, false, false, false, false, true); // cd (w, ch) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,331 MB. GUI used memory: 73 MB. Current time: 6/8/18 10:28:53 AM MDT
+// Elapsed time: 46 seconds
+selectCodeEditor("register_controller.v", 227, 377); // cd (w, ch)
+selectCodeEditor("register_controller.v", 261, 329); // cd (w, ch)
+selectCodeEditor("register_controller.v", 252, 351); // cd (w, ch)
+// Elapsed time: 33 seconds
+selectCodeEditor("register_controller.v", 183, 371); // cd (w, ch)
+selectCodeEditor("register_controller.v", 170, 441); // cd (w, ch)
+selectCodeEditor("register_controller.v", 247, 461); // cd (w, ch)
+selectCodeEditor("register_controller.v", 243, 428); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectCodeEditor("register_controller.v", 149, 480); // cd (w, ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("register_controller.v", 98, 395); // cd (w, ch)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("register_controller.v", 145, 470); // cd (w, ch)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 2,355 MB (+6962kb) [17:47:27]
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,363 MB. GUI used memory: 91 MB. Current time: 6/8/18 10:30:23 AM MDT
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("register_controller.v", 213, 294); // cd (w, ch)
+selectCodeEditor("register_controller.v", 200, 305); // cd (w, ch)
+selectCodeEditor("register_controller.v", 121, 306); // cd (w, ch)
+selectCodeEditor("register_controller.v", 121, 306, false, false, false, false, true); // cd (w, ch) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("register_controller.v", 292, 234); // cd (w, ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("register_controller.v", 207, 255); // cd (w, ch)
+selectCodeEditor("register_controller.v", 175, 220); // cd (w, ch)
+selectCodeEditor("register_controller.v", 177, 206); // cd (w, ch)
+selectCodeEditor("register_controller.v", 215, 305); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 15 seconds
+selectCodeEditor("register_controller.v", 213, 293); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 103 seconds
+selectCodeEditor("register_controller.v", 311, 384); // cd (w, ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("register_controller.v", 320, 447); // cd (w, ch)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("register_controller.v", 320, 431); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,428 MB. GUI used memory: 71 MB. Current time: 6/8/18 10:32:44 AM MDT
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("register_controller.v", 320, 436); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("register_controller.v", 268, 472); // cd (w, ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("register_controller.v", 149, 277); // cd (w, ch)
+// Elapsed time: 14 seconds
+selectCodeEditor("register_controller.v", 283, 252); // cd (w, ch)
+selectCodeEditor("register_controller.v", 106, 204); // cd (w, ch)
+selectCodeEditor("register_controller.v", 169, 262); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("register_controller.v", 276, 307); // cd (w, ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 2,476 MB (+2875kb) [17:50:43]
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,476 MB. GUI used memory: 72 MB. Current time: 6/8/18 10:33:38 AM MDT
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("register_controller.v", 100, 218); // cd (w, ch)
+selectCodeEditor("register_controller.v", 108, 204); // cd (w, ch)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,516 MB. GUI used memory: 72 MB. Current time: 6/8/18 10:34:04 AM MDT
+selectCodeEditor("register_controller.v", 223, 280); // cd (w, ch)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("register_controller.v", 266, 297); // cd (w, ch)
+selectCodeEditor("register_controller.v", 272, 302); // cd (w, ch)
+selectCodeEditor("register_controller.v", 346, 23); // cd (w, ch)
+selectCodeEditor("register_controller.v", 269, 66); // cd (w, ch)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("register_controller.v", 95, 21); // cd (w, ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+typeControlKey(null, null, 'z');
+// HMemoryUtils.trashcanNow. Engine heap size: 2,545 MB. GUI used memory: 72 MB. Current time: 6/8/18 10:34:23 AM MDT
+// TclEventType: DG_GRAPH_STALE
+typeControlKey(null, null, 'z');
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("register_controller.v", 245, 20); // cd (w, ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("register_controller.v", 182, 51); // cd (w, ch)
+selectCodeEditor("register_controller.v", 180, 66); // cd (w, ch)
+selectCodeEditor("register_controller.v", 188, 79); // cd (w, ch)
+selectCodeEditor("register_controller.v", 196, 62); // cd (w, ch)
+selectCodeEditor("register_controller.v", 187, 45); // cd (w, ch)
+// Elapsed time: 41 seconds
+selectCodeEditor("register_controller.v", 193, 146); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("register_controller.v", 184, 221); // cd (w, ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("register_controller.v", 172, 423); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 50 seconds
+selectCodeEditor("register_controller.v", 333, 465); // cd (w, ch)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,593 MB. GUI used memory: 73 MB. Current time: 6/8/18 10:36:13 AM MDT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 2,601 MB (+1508kb) [17:53:21]
+// TclEventType: DG_GRAPH_GENERATED

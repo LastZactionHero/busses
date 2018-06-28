@@ -52,7 +52,7 @@ module debouncer(
                     next_state = TRIG;
                    else
                     next_state = UP;
-           TRIG:   next_state = IDLE;
+           TRIG:   next_state = TRIG;
        endcase;
     end
 
@@ -75,5 +75,17 @@ module debouncer(
             state = next_state;
     end
     
-    assign q = state == TRIG;
+//    assign q = state == TRIG;
+    
+//    always @(posedge clk)
+//    begin
+//        if(n_rst == 0)
+//            hold_counter = 0;
+//        else if(btn)
+//            hold_counter = hold_counter + 1;
+//        else
+//            hold_counter = hold_counter;
+//    end
+    
+    assign q = state == DOWN;
 endmodule

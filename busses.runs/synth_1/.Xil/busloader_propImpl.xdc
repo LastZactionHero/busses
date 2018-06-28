@@ -9,6 +9,14 @@ set_property src_info {type:XDC file:1 line:13 export:INPUT save:INPUT read:READ
 set_property -dict {PACKAGE_PIN C10 IOSTANDARD LVCMOS33} [get_ports {sw[2]}]
 set_property src_info {type:XDC file:1 line:14 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN A10 IOSTANDARD LVCMOS33} [get_ports {sw[3]}]
+set_property src_info {type:XDC file:1 line:17 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN E1    IOSTANDARD LVCMOS33 } [get_ports { led0_b }]; #IO_L18N_T2_35 Sch=led0_b
+set_property src_info {type:XDC file:1 line:20 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN G4    IOSTANDARD LVCMOS33 } [get_ports { led1_b }]; #IO_L20P_T3_35 Sch=led1_b
+set_property src_info {type:XDC file:1 line:23 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN H4    IOSTANDARD LVCMOS33 } [get_ports { led2_b }]; #IO_L21N_T3_DQS_35 Sch=led2_b
+set_property src_info {type:XDC file:1 line:26 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN K2    IOSTANDARD LVCMOS33 } [get_ports { led3_b }]; #IO_L23P_T3_35 Sch=led3_b
 set_property src_info {type:XDC file:1 line:31 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN H5 IOSTANDARD LVCMOS33} [get_ports {led[0]}]
 set_property src_info {type:XDC file:1 line:32 export:INPUT save:INPUT read:READ} [current_design]

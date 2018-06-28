@@ -2,8 +2,8 @@
 # Vivado v2018.1 (64-bit)
 # SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
 # IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
-# Start of session at: Thu Jun  7 10:34:51 2018
-# Process ID: 12593
+# Start of session at: Thu Jun  7 16:42:46 2018
+# Process ID: 23765
 # Current directory: /home/zach/busses
 # Command line: vivado
 # Log file: /home/zach/busses/vivado.log
@@ -12,191 +12,55 @@
 start_gui
 open_project /home/zach/busses/busses.xpr
 update_compile_order -fileset sources_1
-close [ open /home/zach/busses/busses.srcs/sources_1/new/busloader.v w ]
-add_files /home/zach/busses/busses.srcs/sources_1/new/busloader.v
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open /home/zach/busses/busses.srcs/sim_1/new/busloader_tb.v w ]
-add_files -fileset sim_1 /home/zach/busses/busses.srcs/sim_1/new/busloader_tb.v
-update_compile_order -fileset sim_1
-set_property top busloader_tb [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-update_ip_catalog
-update_ip_catalog
-launch_simulation
-open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
-source busloader_tb.tcl
-update_compile_order -fileset sim_1
-current_wave_config {debouncer_tb_behav.wcfg}
-add_wave {{/busloader_tb/clk}} {{/busloader_tb/sw}} {{/busloader_tb/btn}} {{/busloader_tb/led}} 
-current_wave_config {debouncer_tb_behav.wcfg}
-add_wave {{/busloader_tb/DUT/CLK100MHZ}} {{/busloader_tb/DUT/sw}} {{/busloader_tb/DUT/btn}} {{/busloader_tb/DUT/led}} {{/busloader_tb/DUT/n_rst}} {{/busloader_tb/DUT/r_in}} {{/busloader_tb/DUT/r_out}} {{/busloader_tb/DUT/d_in}} {{/busloader_tb/DUT/bus}} {{/busloader_tb/DUT/btn_db}} {{/busloader_tb/DUT/mode}} {{/busloader_tb/DUT/mode_toggle}} {{/busloader_tb/DUT/func}} 
-remove_forces { {/busloader_tb/clk} {/busloader_tb/sw} {/busloader_tb/btn} {/busloader_tb/led} {/busloader_tb/DUT/CLK100MHZ} {/busloader_tb/DUT/sw} {/busloader_tb/DUT/btn} {/busloader_tb/DUT/led} {/busloader_tb/DUT/n_rst} {/busloader_tb/DUT/r_in} {/busloader_tb/DUT/r_out} {/busloader_tb/DUT/d_in} {/busloader_tb/DUT/bus} {/busloader_tb/DUT/btn_db} {/busloader_tb/DUT/mode} {/busloader_tb/DUT/mode_toggle} {/busloader_tb/DUT/func} }
-current_wave_config {debouncer_tb_behav.wcfg*}
-add_wave {{/busloader_tb/DUT/CLK100MHZ}} {{/busloader_tb/DUT/sw}} {{/busloader_tb/DUT/btn}} {{/busloader_tb/DUT/led}} {{/busloader_tb/DUT/n_rst}} {{/busloader_tb/DUT/r_in}} {{/busloader_tb/DUT/r_out}} {{/busloader_tb/DUT/d_in}} {{/busloader_tb/DUT/bus}} {{/busloader_tb/DUT/btn_db}} {{/busloader_tb/DUT/mode}} {{/busloader_tb/DUT/mode_toggle}} {{/busloader_tb/DUT/func}} 
-save_wave_config {/home/zach/busses/debouncer_tb_behav.wcfg}
-close_sim
-launch_simulation
-open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
-source busloader_tb.tcl
-close_sim
-launch_simulation
-open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
-source busloader_tb.tcl
-close_sim
-launch_simulation
-open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
-source busloader_tb.tcl
-close_sim
-launch_simulation
-open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
-source busloader_tb.tcl
-current_wave_config {debouncer_tb_behav.wcfg}
-add_wave {{/busloader_tb/DUT/DB0/clk}} {{/busloader_tb/DUT/DB0/n_rst}} {{/busloader_tb/DUT/DB0/btn}} {{/busloader_tb/DUT/DB0/q}} {{/busloader_tb/DUT/DB0/hold_counter}} {{/busloader_tb/DUT/DB0/next_state}} {{/busloader_tb/DUT/DB0/state}} {{/busloader_tb/DUT/DB0/hold_threshold}} {{/busloader_tb/DUT/DB0/IDLE}} {{/busloader_tb/DUT/DB0/DOWN}} {{/busloader_tb/DUT/DB0/UP}} {{/busloader_tb/DUT/DB0/TRIG}} 
-save_wave_config {/home/zach/busses/debouncer_tb_behav.wcfg}
-close_sim
-launch_simulation
-open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
-source busloader_tb.tcl
-close_sim
-launch_simulation
-open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
-source busloader_tb.tcl
-close_sim
-launch_simulation
-open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
-source busloader_tb.tcl
-save_wave_config {/home/zach/busses/debouncer_tb_behav.wcfg}
-close_sim
-launch_simulation
-open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
-source busloader_tb.tcl
-current_wave_config {debouncer_tb_behav.wcfg}
-add_wave {{/busloader_tb/DUT/R1/store}} 
-current_wave_config {debouncer_tb_behav.wcfg}
-add_wave {{/busloader_tb/DUT/R2/store}} 
-current_wave_config {debouncer_tb_behav.wcfg*}
-add_wave {{/busloader_tb/DUT/R3}} 
-current_wave_config {debouncer_tb_behav.wcfg*}
-add_wave {{/busloader_tb/DUT/R3/store}} 
-save_wave_config {/home/zach/busses/debouncer_tb_behav.wcfg}
-close_sim
-launch_simulation
-open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
-source busloader_tb.tcl
-current_wave_config {debouncer_tb_behav.wcfg*}
-add_wave {{/busloader_tb/DUT/R1}} 
-save_wave_config {/home/zach/busses/debouncer_tb_behav.wcfg}
-close_sim
-launch_simulation
-open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
-source busloader_tb.tcl
-close_sim
-launch_simulation
-open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
-source busloader_tb.tcl
-close_sim
-launch_simulation
-open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
-source busloader_tb.tcl
-current_wave_config {debouncer_tb_behav.wcfg}
-add_wave {{/busloader_tb/DUT/MODE}} 
-save_wave_config {/home/zach/busses/debouncer_tb_behav.wcfg}
-close_sim
-launch_simulation
-open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
-source busloader_tb.tcl
-close_sim
-launch_simulation
-open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
-source busloader_tb.tcl
-close_sim
-launch_simulation
-open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
-source busloader_tb.tcl
-close_sim
-launch_simulation
-open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
-source busloader_tb.tcl
-close_sim
-launch_simulation
-open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
-source busloader_tb.tcl
-close_sim
-launch_simulation
-open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
-source busloader_tb.tcl
-current_wave_config {debouncer_tb_behav.wcfg}
-add_wave {{/busloader_tb/DUT/R1}} 
-save_wave_config {/home/zach/busses/debouncer_tb_behav.wcfg}
-close_sim
-launch_simulation
-open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
-source busloader_tb.tcl
-close_sim
-launch_simulation
-open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
-source busloader_tb.tcl
-close_sim
-launch_simulation
-open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
-source busloader_tb.tcl
+reset_run synth_1
 launch_runs synth_1 -jobs 2
 wait_on_run synth_1
-open_run synth_1 -name synth_1
 launch_runs impl_1 -jobs 2
 wait_on_run impl_1
-set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
-startgroup
-set_property BITSTREAM.GENERAL.COMPRESS TRUE [get_designs synth_1]
-set_property BITSTREAM.CONFIG.CONFIGRATE 33 [get_designs synth_1]
-set_property config_mode SPIx4 [current_design]
-endgroup
-set_property target_constrs_file /home/zach/busses/busses.srcs/constrs_1/imports/verilog_multiplier/Arty-A7-35-Master.xdc [current_fileset -constrset]
-save_constraints -force
-reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target {localhost:3121/xilinx_tcf/Digilent/210319A7664EA}
+set_property PROGRAM.FILE {/home/zach/busses/busses.runs/impl_1/busloader.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/zach/busses/busses.runs/impl_1/busloader.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/zach/busses/busses.runs/impl_1/busloader.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+open_project /home/zach/project_1/project_1.xpr
+current_project busses
+close_project
+update_compile_order -fileset sources_1
+close_project
+open_project /home/zach/busses/busses.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 2
 wait_on_run impl_1
 open_hw
 connect_hw_server
 open_hw_target
+set_property PROGRAM.FILE {/home/zach/busses/busses.runs/impl_1/busloader.bit} [get_hw_devices xc7a35t_0]
 current_hw_device [get_hw_devices xc7a35t_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/zach/busses/busses.runs/impl_1/busloader.bin} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/zach/busses/busses.runs/impl_1/busloader.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/zach/busses/busses.runs/impl_1/busloader.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property PROGRAM.FILE {/home/zach/busses/busses.runs/impl_1/busloader.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
-launch_runs impl_1 -jobs 2
-wait_on_run impl_1
 launch_runs impl_1 -to_step write_bitstream -jobs 2
 wait_on_run impl_1
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
@@ -209,26 +73,13 @@ set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property PROGRAM.FILE {/home/zach/busses/busses.runs/impl_1/busloader.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/zach/busses/busses.runs/impl_1/busloader.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-export_ip_user_files -of_objects  [get_files /home/zach/busses/busses.srcs/sources_1/new/switch_store.v] -no_script -reset -force -quiet
-remove_files  /home/zach/busses/busses.srcs/sources_1/new/switch_store.v
-close_sim
-launch_simulation
-open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
-source busloader_tb.tcl
-close_sim
-launch_simulation
-open_wave_config /home/zach/busses/debouncer_tb_behav.wcfg
-source busloader_tb.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
 reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
-launch_runs impl_1 -jobs 2
+launch_runs impl_1 -to_step write_bitstream -jobs 2
 wait_on_run impl_1
+update_compile_order -fileset sources_1
+reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 2
 wait_on_run impl_1
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
@@ -236,4 +87,60 @@ set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property PROGRAM.FILE {/home/zach/busses/busses.runs/impl_1/busloader.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_sim
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/zach/busses/busses.runs/impl_1/busloader.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/zach/busses/busses.runs/impl_1/busloader.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/zach/busses/busses.runs/impl_1/busloader.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/zach/busses/busses.runs/impl_1/busloader.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/zach/busses/busses.runs/impl_1/busloader.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/zach/busses/busses.runs/impl_1/busloader.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
