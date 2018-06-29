@@ -115,7 +115,7 @@ module busloader(
         btn_db[1] ? 3'b001 :
         0;
 
-    // Register Controller
+//     Register Controller
     register_controller RegCtrl1(
         .clk(CLK100MHZ),
         .n_rst(n_rst),
@@ -127,7 +127,7 @@ module busloader(
     );
     
     // Put switches on the bus if d_in set
-    assign bus = d_in ? sw : 'bz;
+//    assign bus = d_in ? sw : 'bz;
     assign led0_b = mode[0];
     assign led1_b = mode[1];
     

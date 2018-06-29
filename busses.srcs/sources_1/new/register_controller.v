@@ -28,18 +28,20 @@ module register_controller(
     output wire [2:0] r_in,
     output wire [2:0] r_out,
     output wire d_in
-    );
-    parameter [2:0] IDLE = 3'b000, STORE = 3'b001, DISPLAY = 3'b010, SWAP_IN = 3'b011, SWAP_TMP = 3'b100, SWAP_OUT = 3'b101;
+    );    
+    parameter [2:0] IDLE = 3'b000, STORE = 3'b001, STORE_SAVE = 3'b010, DISPLAY = 3'b011, SWAP_IN = 3'b100, SWAP_TMP = 3'b101, SWAP_OUT = 3'b110;
  
     reg [2:0]state;
     reg [2:0]state_function;
     reg [2:0]next_state;
 
-    always @(posedge func, posedge state) begin
+    always @(*) begin
         case(mode)
         00: begin
             if(state == IDLE && func != 0)
-                next_state = 3'b001;
+                next_state = STORE;
+            else if(state == STORE)
+                next_state = STORE_SAVE;
             else
                 next_state = IDLE;
         end
@@ -74,7 +76,7 @@ module register_controller(
             state = next_state;
     end
     
-    assign r_in = state == STORE ? state_function :
+    assign r_in = (state == STORE || state == STORE_SAVE) ? state_function :
                   state == SWAP_IN ? // Set tmp
                     state_function == 3'b001 ? 3'b100 :
                     state_function == 3'b010 ? 3'b001 :
@@ -111,6 +113,6 @@ module register_controller(
                               0 :                   
                             0;
     
-    assign d_in = state == STORE ? 1 : 0;  
+    assign d_in = state == STORE || state == STORE_SAVE ? 1 : 0;  
     
 endmodule

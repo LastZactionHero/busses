@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sat Jun 23 00:07:05 2018
+# Process ID: 9956
+# Current directory: C:/Users/Zach/Development/busses/busses.runs/impl_2
+# Command line: vivado.exe -log register_loader.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source register_loader.tcl -notrace
+# Log file: C:/Users/Zach/Development/busses/busses.runs/impl_2/register_loader.vdi
+# Journal file: C:/Users/Zach/Development/busses/busses.runs/impl_2\vivado.jou
+#-----------------------------------------------------------
+source register_loader.tcl -notrace

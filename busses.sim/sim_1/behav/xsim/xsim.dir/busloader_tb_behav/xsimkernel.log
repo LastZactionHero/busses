@@ -1,4 +1,7 @@
-Running: xsim.dir/busloader_tb_behav/xsimk.exe -simmode gui -wdb busloader_tb_behav.wdb -simrunnum 0 -socket 50291
+Running: xsim.dir/busloader_tb_behav/xsimk.exe -simmode gui -wdb busloader_tb_behav.wdb -simrunnum 0 -socket 50753
 Design successfully loaded
-Design Loading Memory Usage: 4924 KB (Peak: 4924 KB)
-Design Loading CPU Usage: 0 ms
+Design Loading Memory Usage: 4836 KB (Peak: 4836 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 5456 KB (Peak: 5456 KB)
+Simulation CPU Usage: 30 ms

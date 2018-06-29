@@ -29,22 +29,29 @@ module mode_set(
     parameter [1:0] M_STORE = 2'b00, M_DISPLAY = 2'b01, M_SWAP = 2'b10;
     reg [1:0]next_mode;
 
-    always @(posedge toggle)
-    begin
-        case(mode)
-        M_STORE: next_mode = M_DISPLAY;
-        M_DISPLAY: next_mode = M_SWAP;
-        M_SWAP: next_mode = M_STORE;
-        endcase
-    end
-
-    always @(posedge clk, posedge n_rst)
+    always @(posedge clk)
     begin
         if(!n_rst) begin
             mode = M_STORE;
-//            next_mode = M_STORE;
         end
         else
             mode = next_mode;
     end
+
+    always @(posedge toggle or negedge n_rst)
+    begin
+        if(!n_rst)
+            next_mode = M_STORE;
+        else if(toggle) begin
+            case(mode)
+            M_STORE: next_mode = M_DISPLAY;
+            M_DISPLAY: next_mode = M_SWAP;
+            M_SWAP: next_mode = M_STORE;
+            endcase
+        end
+        else
+            next_mode = mode;
+    end
+
+
 endmodule
