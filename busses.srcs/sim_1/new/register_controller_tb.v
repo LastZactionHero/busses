@@ -34,73 +34,75 @@ module register_controller_tb(
 
     initial begin
         clk = 1;
+        forever #10 clk = ~clk;
+    end
+    
+    initial begin
         n_rst = 0;
         repeat(4) #10 clk = ~clk;
         n_rst = 1;
         repeat(4) #10 clk = ~clk;
         
-        forever #10 clk = ~clk;
-    end
-    
-    initial begin
+        #5;
+        
         // Load
         mode = 2'b00;
         func = 0;
-        #55;
+        #40;
 
         func = 3'b001;
         #20
         func = 0;
-        #20;
+        #40;
         
         func = 3'b010;
         #20;
         func = 0;
-        #20;
+        #40;
 
         func = 3'b100;
         #20;
         func = 0;
-        #20;
+        #40;
         
         // Display
         mode = 2'b01;
         func = 0;
-        #20;
+        #40;
         
         func = 3'b001;
         #20
         func = 0;
-        #20;
+        #40;
         
         func = 3'b010;
         #20;
         func = 0;
-        #20;
+        #40;
 
         func = 3'b100;
         #20;
         func = 0;
-        #20;
+        #40;
        
         // Swap
-        mode = 2'b10;
-        #20;
+//        mode = 2'b10;
+//        #20;
         
-        func = 3'b001;
-        #20;
-        func = 0;
-        #60;
+//        func = 3'b001;
+//        #20;
+//        func = 0;
+//        #60;
         
-        func = 3'b010;
-        #20;
-        func = 0;
-        #60;
+//        func = 3'b010;
+//        #20;
+//        func = 0;
+//        #60;
         
-        func = 3'b100;
-        #20;
-        func = 0;
-        #60;        
+//        func = 3'b100;
+//        #20;
+//        func = 0;
+//        #60;        
 
         $finish;
     end    

@@ -1,65 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_2" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1529733969">
-  <File Type="PWROPT-DCP" Name="register_loader_pwropt.dcp"/>
   <File Type="ROUTE-PWR" Name="register_loader_power_routed.rpt"/>
   <File Type="PA-TCL" Name="register_loader.tcl"/>
+  <File Type="PWROPT-DCP" Name="register_loader_pwropt.dcp"/>
   <File Type="ROUTE-PWR-SUM" Name="register_loader_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="register_loader_reports.tcl"/>
   <File Type="BG-DRC" Name="register_loader.drc"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="register_loader_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="register_loader_timing_summary_init.rpt"/>
   <File Type="OPT-HWDEF" Name="register_loader.hwdef"/>
   <File Type="OPT-DCP" Name="register_loader_opt.dcp"/>
   <File Type="OPT-DRC" Name="register_loader_drc_opted.rpt"/>
-  <File Type="OPT-TIMING" Name="register_loader_timing_summary_opted.rpt"/>
-  <File Type="PWROPT-DRC" Name="register_loader_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="register_loader_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="register_loader_placed.dcp"/>
   <File Type="PLACE-IO" Name="register_loader_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="register_loader_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="register_loader_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="register_loader_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="register_loader_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="register_loader_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="register_loader_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-TIMING" Name="register_loader_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="register_loader_postplace_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="register_loader_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="register_loader_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="register_loader_drc_physopted.rpt"/>
   <File Type="BG-BIT" Name="register_loader.bit"/>
-  <File Type="PHYSOPT-TIMING" Name="register_loader_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="register_loader_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="register_loader_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="register_loader_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="register_loader_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="register_loader_drc_routed.pb"/>
-  <File Type="BITSTR-MSK" Name="register_loader.msk"/>
   <File Type="ROUTE-DRC-RPX" Name="register_loader_drc_routed.rpx"/>
-  <File Type="BG-BGN" Name="register_loader.bgn"/>
+  <File Type="BITSTR-MSK" Name="register_loader.msk"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="register_loader_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-RBT" Name="register_loader.rbt"/>
+  <File Type="BG-BGN" Name="register_loader.bgn"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="register_loader_methodology_drc_routed.rpx"/>
-  <File Type="BG-BIN" Name="register_loader.bin"/>
+  <File Type="BITSTR-RBT" Name="register_loader.rbt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="register_loader_methodology_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="register_loader.bin"/>
   <File Type="ROUTE-PWR-RPX" Name="register_loader_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="register_loader_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="register_loader_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="register_loader_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="register_loader_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="register_loader_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="register_loader_incremental_reuse_routed.rpt"/>
-  <File Type="RDI-RDI" Name="register_loader.vdi"/>
   <File Type="ROUTE-CLK" Name="register_loader_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="register_loader.vdi"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="register_loader_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="register_loader_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="register_loader_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="register_loader_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="register_loader_timing_summary_postroute_physopted.rpx"/>
   <File Type="BITSTR-NKY" Name="register_loader.nky"/>
   <File Type="BITSTR-BMM" Name="register_loader_bd.bmm"/>
   <File Type="BITSTR-MMI" Name="register_loader.mmi"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="register_loader.ltx"/>
   <File Type="BITSTR-SYSDEF" Name="register_loader.sysdef"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
@@ -150,9 +134,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
